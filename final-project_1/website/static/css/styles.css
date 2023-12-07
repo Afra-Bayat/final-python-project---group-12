@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+    color: #333;
+}
+
+.corner-image {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999; /* Ensure it's above other elements */
+        }
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #f95959;
+    border: 1px solid #f95959;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Main Page Styles */
+/* You can style specific elements within the main page here */
+
+/* Data Page Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f95959;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* About Page Styles */
+/* Styles for the about page go here */
+
+body, h1, p, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the table */
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width of the table as needed */
+    margin: 20px auto; /* Center the table */
+}
+
+th, td {
+    border: 1px solid #000; /* Add borders to cells */
+    padding: 8px; /* Add padding to cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f95959; /* Background color for header cells */
+}

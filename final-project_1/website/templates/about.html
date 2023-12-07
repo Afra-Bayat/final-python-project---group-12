@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Data Description</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    
+</head>
+<body>
+    <h1>Canadian Immigration Data</h1>
+    <p>The immigration to Canada dataset available on Kaggle typically contains information about immigrants arriving in Canada over several years. The dataset provides details about immigrants coming to Canada from various countries over multiple years. It usually includes information such as the country of origin, continent, region, and the number of immigrants who arrived in Canada annually from 1980 to a recent year (usually 2013 or later, depending on the dataset).</p>
+     <div>
+        <h2>Dataset link : </h2>
+        <a href="https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada" class="button">Canada Immigration</a>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Variable</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>The country of origin of immigrants.</td>
+        </tr>
+        <tr>
+            <td>Continent</td>
+            <td>The continent to which the country belongs.</td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td>Specific region within the country of origin.</td>
+        </tr>
+        <tr>
+            <td>DevName</td>
+            <td>Development status of the country (e.g., Developed, Developing).</td>
+        </tr>
+        <tr>
+            <td>1980 to 2013</td>
+            <td>Number of immigrants from the specified country in each respective year from 1980 to 2013.</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>Cumulative total of immigrants from the specified country for the entire period (1980 to 2013).</td>
+        </tr>
+    </table>
+    <img src="{{ url_for('static', filename='images/Canada.png')}}" alt="Corner Image" class="corner-image">
+</body>
+</html>

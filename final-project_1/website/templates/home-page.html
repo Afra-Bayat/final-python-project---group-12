@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    
+</head>
+<body>
+    <h1> Canada Immigration Info </h1>
+    <p> where do you want to go </p>
+    <ul>
+        <li> <a href="{{url_for('about')}}" class="button">Go to About Page</a> </li>
+        <li> <a href="{{url_for('data')}}" class="button">Go to Data Page</a> </li>
+    </ul>
+
+    <!-- Image placed in the bottom right corner -->
+    <img src="{{ url_for('static', filename='images/Canada.png')}}" alt="Corner Image" class="corner-image">
+</body>
+</html>
