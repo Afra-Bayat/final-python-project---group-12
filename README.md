@@ -11,8 +11,7 @@ Group No. 12
  
 ### Project Objective:
 
-This project contains the usage of Python, Pandas, SQLite3, and Flask. Using Pandas, we are reading data from dataset and stored in database using SQLite3 package. Flask is used to present stored data of database on web.
-Website contains mainly 3 pages, Home, About, and Dataset. About Us page shows the details about each variable definition. Dataset page shows the number of immigrants from the specified country in each respective year from 1980 to 2013. 
+This project involves the usage of Python, Pandas, SQLite3, and Flask. Using Pandas, we read data from the dataset and store it in a database using the SQLite3 package. Flask is used to present the stored data from the database on the web. The website contains mainly three pages: Home, About, and Dataset. The About Us page provides details about each variable definition. The Dataset page displays the trend in the number of immigrants for 10 specific countries from 1980 to 2013.
 
 
 
