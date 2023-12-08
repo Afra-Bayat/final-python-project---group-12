@@ -10,7 +10,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{{url_for('index')}}">
             <img width="75" height="50" src="{{ url_for('static', filename='images/Canada.png')}}" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('index')}}">Home</a>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('about')}}">About Us</a>
               </li>
@@ -39,40 +41,41 @@
             <h2>Dataset link : </h2>
             <a href="https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada" class="button">Canada Immigration</a>
         </div>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Country</td>
+                    <td>The country of origin of immigrants.</td>
+                </tr>
+                <tr>
+                    <td>Continent</td>
+                    <td>The continent to which the country belongs.</td>
+                </tr>
+                <tr>
+                    <td>Region</td>
+                    <td>Specific region within the country of origin.</td>
+                </tr>
+                <tr>
+                    <td>DevName</td>
+                    <td>Development status of the country (e.g., Developed, Developing).</td>
+                </tr>
+                <tr>
+                    <td>1980 to 2013</td>
+                    <td>Number of immigrants from the specified country in each respective year from 1980 to 2013.</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Cumulative total of immigrants from the specified country for the entire period (1980 to 2013).</td>
+                </tr>
+          </table>
     </div>
-
-      <h1>Canadian Immigration Data</h1>
-
-      <table border="1">
-          <tr>
-              <th>Variable</th>
-              <th>Description</th>
-          </tr>
-          <tr>
-              <td>Country</td>
-              <td>The country of origin of immigrants.</td>
-          </tr>
-          <tr>
-              <td>Continent</td>
-              <td>The continent to which the country belongs.</td>
-          </tr>
-          <tr>
-              <td>Region</td>
-              <td>Specific region within the country of origin.</td>
-          </tr>
-          <tr>
-              <td>DevName</td>
-              <td>Development status of the country (e.g., Developed, Developing).</td>
-          </tr>
-          <tr>
-              <td>1980 to 2013</td>
-              <td>Number of immigrants from the specified country in each respective year from 1980 to 2013.</td>
-          </tr>
-          <tr>
-              <td>Total</td>
-              <td>Cumulative total of immigrants from the specified country for the entire period (1980 to 2013).</td>
-          </tr>
-      </table>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
